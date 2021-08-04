@@ -3,12 +3,12 @@ let runThisStuff = () => {
     fetch(url).then(function(response){
        response.json().then(function(json){
            let container = document.getElementById('container')
-           for(let i = 0; i < json.length ;i++){
+           for(let i = 0; i < json.length;i++){
             
             container.innerHTML += `<div class="astronaut">
             <div class="bio">
             <h4>Astronaut count: ${i + 1}<h4>
-               <h3>${json[i].firstName}</h3>
+               <h3>${json[i].firstName} ${json[i].lastName}</h3>
                <ul>
                   <li>Hours in space: ${json[i].hoursInSpace}</li>
                   <li ${json[i].active && ('class = "activated"')}>Active: ${json[i].active}</li>

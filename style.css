@@ -5,10 +5,15 @@ h1 {
 .avatar {
     border-radius: 50%;
     height: 100px;
-    float:right;
+    float: right;
 }
 
 
+.container {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+}
 
 
 .astronaut {
@@ -16,16 +21,17 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 3em;
-    border-radius: 6px;
-    background-color: rgb(122, 85, 85) ;
+    border-radius: 3em;
+    background-color: rgb(255, 255, 255) ;
     margin-bottom: 3em;
-    width: auto;
-    
-    
-    
+    box-shadow: rgb(56, 49, 49) .25em .25em .5em .5em;
 }
+
 
 .activated {
     color: green;
 }
 
+ul {
+    justify-content: center;
+}
